@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-color: #1b1b1b;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Font;
+}
+
+@font-face {
+    font-family: Font;
+    src: url(8bitOperatorPlus-Bold.ttf);
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+a {
+    color:rgb(21, 128, 69);
+}
+
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    bottom: -20%;
+    background-color:#424242;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 3%;
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.25);
+    transform:scale(1.25);
+}
+
+.game-bg {
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.description {
+    width: 50%;
+    height: auto;
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #353535;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+.seperation {
+    padding: 1%;
+}
+
+/* Style the header */
+.header {
+    width: 50%;
+    height: auto;
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #6e6e6e;
+    padding: 0 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
